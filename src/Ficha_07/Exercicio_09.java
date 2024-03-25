@@ -18,11 +18,14 @@ public class Exercicio_09 {
         while (leitura.hasNextLine()) {
             String[] linhaDividida = linha.split(",");
 
-        linha = leitura.nextLine();
+            linha = leitura.nextLine();
+
+
+            return linha;
+        }
 
 
         return linha;
     }
+}
 
-
-    }
