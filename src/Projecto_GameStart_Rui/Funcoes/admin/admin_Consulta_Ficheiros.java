@@ -1,4 +1,4 @@
-package Projecto_GameStart_Rui.Funcoes;
+package Projecto_GameStart_Rui.Funcoes.admin;
 
 import java.util.Scanner;
 
