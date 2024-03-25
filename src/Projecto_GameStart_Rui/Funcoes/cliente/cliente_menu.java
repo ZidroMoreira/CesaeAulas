@@ -1,5 +1,6 @@
 package Projecto_GameStart_Rui.Funcoes.cliente;
 
+import java.io.File;
 import java.util.Scanner;
 
 public class cliente_menu {
@@ -83,6 +84,7 @@ public class cliente_menu {
 
                 /*3. Imprimir Catálogo: Imprima todos os títulos de jogos (sem duplicados). */
             case 3:
+
 
 
         }
