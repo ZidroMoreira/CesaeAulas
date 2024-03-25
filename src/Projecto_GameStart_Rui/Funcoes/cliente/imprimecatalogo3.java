@@ -21,6 +21,6 @@ public class imprimecatalogo3 {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        imprimeCatalogo("Projecto_GameStart_Rui\\GameStart_Ficheiros\\GameStart_Vendas.csv");
+        imprimeCatalogo("GameStart_Vendas.csv");
     }
 }
