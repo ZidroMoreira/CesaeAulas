@@ -23,6 +23,15 @@ public class Game_Start_Main {
             switch(opcao){
                 case 1:
 
+                    //Colocar o " cliente_menu"
+                    break;
+
+                case 2:
+
+                    //Colocar o "admin_menu
+
+
+
             }
 
 

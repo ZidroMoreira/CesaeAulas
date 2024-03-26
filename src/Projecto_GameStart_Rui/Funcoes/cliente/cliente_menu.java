@@ -18,21 +18,14 @@ public class cliente_menu {
         System.out.println("************Menu Cliente************");
         System.out.println("""
                                     
-                1. Inserir Novo Cliente
-                                
-                2. Procurar Estacionamento
-                                
-                3. Imprimir Catálogo de Jogos
-                                
-                4. Imprimir Catálogo Gráficos
-                                
-                5. Imprimir Catálogo Editora
-                                
-                6. Imprimir Catálogo Categoria
-                                
-                7. Imprimir Jogo Mais Recente
-                                    
-                8. Voltar Menu Anterior
+                1. Inserir Novo Cliente             
+                2. Procurar Estacionamento               
+                3. Imprimir Catálogo de Jogos              
+                4. Imprimir Catálogo Gráficos             
+                5. Imprimir Catálogo Editora            
+                6. Imprimir Catálogo Categoria              
+                7. Imprimir Jogo Mais Recente                  
+                8. Voltar Menu Principal
                                 
                 """);
         System.out.println("Escolha Uma Das Opções: ");
@@ -58,6 +51,8 @@ public class cliente_menu {
                 break;
 
             case 2:
+
+                //Criar Função procurar_Estacionamento_Triangular
                 System.out.println("************Procurar Estacionamento************");
                 System.out.println();
 
