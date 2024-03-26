@@ -27,11 +27,10 @@ public class imprimecatalogo3 {
         }
         in.close();
 
-
         //Fecho do Scanner de " Leitura " nao obrigatório
 
     }
-
+//APAGAR MAIN
     public static void main(String[] args) throws FileNotFoundException {
         String catalogo=null;
 

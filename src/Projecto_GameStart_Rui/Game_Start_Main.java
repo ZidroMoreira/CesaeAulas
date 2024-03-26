@@ -2,19 +2,16 @@ package Projecto_GameStart_Rui;
 
 import Projecto_GameStart_Rui.Funcoes.cliente.Funcao_Cliente;
 
+
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import static Projecto_GameStart_Rui.Funcoes.cliente.imprimecatalogo3.imprimeFicheiroConsola;
 
-public class Game_Start_Main {
+public class Game_Start_Main  {
 
 
     public static void main(String[] args) throws FileNotFoundException {
-
-
-        //IMPORTAÇÂO FICHEIROS
-        imprimeFicheiroConsola("FichaJava\\GameStart_Ficheiros\\GameStart_Vendas.csv");
 
 
         Scanner input = new Scanner(System.in);
@@ -29,6 +26,8 @@ public class Game_Start_Main {
         System.out.println("3.Sair");
 
         opcao = input.nextInt();
+
+        ///////////////////////////////////////////////////////////////////////////
 
         //Se opcao == 1 Menu Cliente
         if (opcao == 1) {
@@ -51,7 +50,7 @@ public class Game_Start_Main {
 
         opcao = input.nextInt();
         switch (opcao) {
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             //1.Inserir Novo Cliente
             case 1:
                 //Funcao CriarNovoCliente
@@ -71,10 +70,12 @@ public class Game_Start_Main {
                 System.out.println("Insira Email:");
                 email = input.next();
 
-                System.out.println("Cliente Inserido com Sucesso: " + nome + "|" + contacto + "|" + email);
-
+                System.out.println("Cliente Inserido com Sucesso: \nNome: \n"+ nome +"\nContacto: \n" + contacto + "\nEmail:\n" + email);
 
                 break;
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
             //2. Procurar Estacionamento
             case 2:
                 System.out.println("************Procurar Estacionamento************");
@@ -98,20 +99,67 @@ public class Game_Start_Main {
 
                 }
                 System.out.println("O numero de Lugares Disponiveis são : " + contLugTriangulares);
-
-
                 break;
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
             //3. Imprimir Catálogo de Jogos
             case 3:
-
                 System.out.println("""
-                                    Escolha Uma Das Seguintes Opções:
-                                    1.Vendas
-                                    2.Clientes
-                                    3.Categorias
-                                    4.Voltar ao Menu Anterior""");
-                break;
+                        Escolha Uma Das Seguintes Opções:
+                                       
+                        1.Vendas
+                        2.Clientes
+                        3.Categorias
+                        4.Voltar ao Menu Anterior""");
 
+                        opcao = input.nextInt();
+
+                         switch (opcao) {
+
+                            case 1:
+                                imprimeFicheiroConsola("GameStart_Ficheiros\\GameStart_Vendas.csv");
+                                break;
+                            case 2:
+                                imprimeFicheiroConsola("GameStart_Ficheiros\\GameStart_Clientes.csv");
+                                break;
+                            case 3:
+                                imprimeFicheiroConsola("GameStart_Ficheiros\\GameStart_Categorias.csv");
+                                break;
+
+                            case 4:
+                                //TO DO - VOLTAR AO MENU ANTERIOR
+                                break;
+                        }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//              4. Imprimir Catálogo Gráficos
+            case 4:
+
+
+                System.out.println("*************Imprimir Catálogo Gráficos**************");
+                System.out.println("""
+                1.Call of Duty
+                2.Fifa
+                3.Hollow Knight
+                4.Mortal Kombat
+                5.Overcooked
+                6.Witcher 3: Wild Hunt
+                7.Minecraft
+                Escolhe uma das seguintes opções :
+                """);
+                opcao= input.nextInt();
+
+                switch (opcao){
+                    case 1:
+                        imprimeFicheiroConsola("GameStart_Ficheiros/CatalogoGrafico/callOfDuty.txt");
+                        break;
+
+                
+                
+
+
+
+                }
         }
     }
 }
