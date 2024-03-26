@@ -1,5 +1,8 @@
 package Projecto_GameStart_Rui.Funcoes.admin;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class admin_menu {
@@ -26,6 +29,7 @@ public class admin_menu {
                 """);
         System.out.println("Escolha Uma Das Opções: ");
         opcao = input.nextInt();
+
 
     }
 }

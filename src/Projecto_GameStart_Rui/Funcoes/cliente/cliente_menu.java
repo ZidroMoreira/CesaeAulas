@@ -60,13 +60,13 @@ public class cliente_menu {
                     Procurar estacionamento: Sabendo que os lugares de vago são todos os números triangulares múltiplos de 5 num
                     limite de 121 lugares.*/
 
-                //Var's da Opção lugares multiplos de 5
+                //Var's da Opção lugares multiplos de 3
 
                 int maxLugares = 121, lug = 0, contLugTriangulares = 0;
 
                 for (int i = 1; i <= maxLugares; i++) {
 
-                    if (i % 5 == 0) {
+                    if (i % 3 == 0) {
 
                         contLugTriangulares++;
 

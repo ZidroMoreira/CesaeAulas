@@ -1,12 +1,14 @@
-package Projecto_GameStart_Rui.Funcoes.admin;
+/*package Projecto_GameStart_Rui.Funcoes.admin;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class admin_Consulta_Ficheiros {
 
     //Função para Imprimir na consola Ficheiro de Vendas
-    public static void imprimirFicheiroVendasAdmin(String path) throws FileNotFoundException {
+    public static void main(String[] args) {
+
 
         Scanner input = new Scanner(System.in);
         int opcao =0;
@@ -31,12 +33,23 @@ public class admin_Consulta_Ficheiros {
 
             switch(opcao){
                 case 1:
-                    // Usar o Exercicio 1 ficha 7
+                    // vendas
 
+                    Scanner leitorFicheiro = new Scanner(new File();
+
+
+                    //Instanciar um Scanner para o Ficheiro que foi passado por parametro
+                    while (leitorFicheiro.hasNextLine()){
+                        String linha = leitorFicheiro.nextLine();
+
+                        System.out.println(linha);
+                    }
+                    leitorFicheiro.close(); // Verificar Se está a funcionar
 
             }
-
-        } while (opcao!=5);
+        }
     }
-
 }
+
+
+*/
