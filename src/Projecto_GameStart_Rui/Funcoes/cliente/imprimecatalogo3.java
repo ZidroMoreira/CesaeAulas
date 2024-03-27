@@ -17,7 +17,7 @@ public class imprimecatalogo3 {
     // Metodo Public sem retorno ( void ) nome do metodo ( imprimeCatalogo) e o String path é passado por parametro
     public static void imprimeFicheiroConsola(String path) throws FileNotFoundException {
 
-        //Scanner Input que os dados do arquivo file é passado como argumento
+        //Scanner  que os dados do arquivo file é passado como argumento
         Scanner in = new Scanner(new File(path));
         while (in.hasNextLine()) {
 

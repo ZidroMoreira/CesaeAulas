@@ -43,13 +43,14 @@ public class MenuAdmin {
 
 
                 case 2: //2.Total de Vendas
+                    totalDeVendas("GameStart_Ficheiros/GameStart_Vendas.csv");
 
                     break;
 
 
                 case 3: //2.Total de Lucro
 
-                    totalDeLucro();
+
 
                     break;
 
