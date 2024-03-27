@@ -10,7 +10,7 @@ public class Exercicio_01 {
 
 
         //Instanciar um Scanner para o Ficheiro que foi passado por parametro
-        while (leitorFicheiro.hasNextLine()){
+        while (leitorFicheiro.hasNextLine()) {
             String linha = leitorFicheiro.nextLine();
 
             System.out.println(linha);
@@ -18,10 +18,6 @@ public class Exercicio_01 {
         leitorFicheiro.close(); // Verificar Se está a funcionar
 
     }
-
-    public static void main(String[] args) throws FileNotFoundException {
-
-
-        imprimirFicheiroConsola("Ficheiros/Exercicio_01.txt");
-    }
 }
+
+
