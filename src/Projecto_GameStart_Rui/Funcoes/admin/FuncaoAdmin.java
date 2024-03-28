@@ -23,14 +23,15 @@ public class FuncaoAdmin {
 
         //Variaveis
         double total = 0,valor=0;
+        //Consome a linha do cabeçalho
+        totalVendas.nextLine();
 
         //Enquanto Scanner tiver uma Proxima Linha,HasNextLine( Condição Booleana)
         while(totalVendas.hasNextLine()){
 
-            // A linha é Guardada na Variavel Linha que é o cabeçalho
             String linha = totalVendas.nextLine();
 
-            //Cria Um Vetor que a linha lida do Scanner
+                   //Cria Um Vetor que a linha lida do Scanner
             String[]itensDaLinha = linha.split(";");
 
             //A String da linha na posiçao [5]= que sao os valores da venda que estao em string sao convertidos para inteiro
