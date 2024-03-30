@@ -3,6 +3,7 @@ package Ficha_05;
 import java.util.Scanner;
 
 public class Exercicio_04 {
+    //4. Escreva um programa que lê um array de tamanho 10 e encontra o menor elemento.
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

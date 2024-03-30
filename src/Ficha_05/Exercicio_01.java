@@ -3,7 +3,8 @@ package Ficha_05;
 import java.util.Scanner;
 
 public class Exercicio_01 {
-
+// Implemente um programa que permita adicionar 10 números inteiros a um array e que os imprima pela ordem
+//de inserção
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);

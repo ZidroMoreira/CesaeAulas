@@ -3,7 +3,8 @@ package Ficha_05;
 import java.util.Scanner;
 
 public class Exercicio_02 {
-
+//Implemente um programa que permita adicionar comissões mensais a um array de tamanho 12 (uma posição
+//para cada mês) e calcular o seu total anual
     public static void main(String[] args) {
 
         // Inportar Scanner

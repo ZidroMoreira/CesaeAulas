@@ -8,45 +8,76 @@ import static Projecto_GameStart_Rui.Funcoes.cliente.imprimecatalogo3.*;
 
 public class FuncaoAdmin {
 
-    public static void lerficheiroparaMatriz(){// Fazer função Para Imprimir Matriz
+    public static void lerficheiroparaMatriz() {// Fazer função Para Imprimir Matriz
         //F07E09
-
 
 
     }
 
-
+    /***
+     * Função que Calcula o Total de vendas
+     * @param path
+     * @throws FileNotFoundException
+     */
     public static void totalDeVendas(String path) throws FileNotFoundException {//2. Total de Vendas: Imprima quantas vendas foram executadas e o seu valor total.
 
         //Chama o Scanner e passa como argumento o file com um caminho
-        Scanner totalVendas = new Scanner(new File(path));
+        Scanner sc = new Scanner(new File(path));
 
         //Variaveis
-        double total = 0,valor=0;
+        double totalVendas = 0, valor = 0;
+        String linha = "";
+
         //Consome a linha do cabeçalho
-        totalVendas.nextLine();
+        sc.nextLine();
 
         //Enquanto Scanner tiver uma Proxima Linha,HasNextLine( Condição Booleana)
-        while(totalVendas.hasNextLine()){
+        while (sc.hasNextLine()) {
 
-            String linha = totalVendas.nextLine();
+            //Consome a linha do cabeçalho
+            sc.nextLine();
 
-                   //Cria Um Vetor que a linha lida do Scanner
-            String[]itensDaLinha = linha.split(";");
+            //Cria Um Vetor com a linha lida do Scanner
+            String[] itensDaLinha = linha.split(";");
 
             //A String da linha na posiçao [5]= que sao os valores da venda que estao em string sao convertidos para inteiro
             valor = Double.parseDouble(itensDaLinha[5]);
 
 
-            total+=valor;
+            totalVendas += valor;
 
         }
-        System.out.println("O total das Vendas é : "+valor);
+        System.out.println("O Total das Vendas é : " + totalVendas + " Euros");
 
 
     }
 
+    public static void totalLucro(String path) throws FileNotFoundException {
+
+        //Variaveis
+        String linha = "";
+        double valor;
+
+        //Chama Scanner em que é passado por um ficheiro por caminho
+        Scanner fileCategorias = new Scanner(new File(path));
+
+        //Avança a linha do cabeçalho
+        fileCategorias.nextLine();
+
+        //Enquanto Scanner (sc) tem uma proxima linha
+        while (fileCategorias.hasNextLine()) {
+            String[] itensDalinha = linha.split(";");
+            String[] categoria = new String[]{itensDalinha[3]};
+
+
+        }
+
+
+    }
+
+
     public static void consultarFicheiros() throws FileNotFoundException {
+
         int opcao;
         Scanner input = new Scanner(System.in);
 
