@@ -34,8 +34,7 @@ public class FuncaoAdmin {
         //Enquanto Scanner tiver uma Proxima Linha,HasNextLine( Condição Booleana)
         while (sc.hasNextLine()) {
 
-            //Consome a linha do cabeçalho
-            sc.nextLine();
+            linha = sc.nextLine();
 
             //Cria Um Vetor com a linha lida do Scanner
             String[] itensDaLinha = linha.split(";");

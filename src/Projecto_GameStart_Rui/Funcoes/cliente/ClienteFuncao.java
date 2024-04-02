@@ -38,7 +38,7 @@ public class ClienteFuncao {
         System.out.println();
 
         /*Ficha06Exercicio03 Numeros Triangulares
-         Procurar estacionamento: Sabendo que os lugares de vago são todos os números triangulares múltiplos de 3 num
+         Procurar estacionamento: Sabendo que os lugares de vago são todos os números triangulares( múltiplos de 3) num
          limite de 121 lugares.*/
 
         //Var's da Opção lugares multiplos de 3
@@ -49,7 +49,12 @@ public class ClienteFuncao {
 
             if (i % 3 == 0) {
 
+                //Print dos lugares com as caracteristicas pedidas no exercicio
+
+                //Total
                 contLugTriangulares++;
+
+
 
             }
 
